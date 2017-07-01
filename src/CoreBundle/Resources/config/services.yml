@@ -1,0 +1,9 @@
+services:
+
+    core.manager.user:
+        class: CoreBundle\Manager\UserManager
+        arguments: ['@doctrine.orm.entity_manager']
+
+    core.manager.note:
+        class: CoreBundle\Manager\NoteManager
+        arguments: ['@doctrine.orm.entity_manager']
